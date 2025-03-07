@@ -12,10 +12,6 @@ function App() {
   const [mode, setMode] = useState<'work' | 'rest'>('work')
   const [timeLeft, setTimeLeft] = useState(WORK_TIME)
 
-  const getCurrentTime = useCallback(() => {
-    return mode === 'work' ? WORK_TIME : REST_TIME
-  }, [mode])
-
   // Update title when timer changes
   useEffect(() => {
     const minutes = Math.floor(timeLeft / 60)
@@ -32,7 +28,7 @@ function App() {
   const handlePause = () => setIsRunning(false)
   const handleReset = () => {
     setIsRunning(false)
-    setTimeLeft(getCurrentTime())
+    setTimeLeft(mode === 'work' ? WORK_TIME : REST_TIME)
   }
 
   const handleSkip = () => {
