@@ -1,0 +1,44 @@
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.button:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.button:active {
+  background-color: #d1d5db;
+  transform: translateY(0);
+}
+
+.modeButton {
+  background-color: #2563eb;
+  color: white;
+}
+
+.modeButton:hover {
+  background-color: #1d4ed8;
+}
+
+.modeButton:active {
+  background-color: #1e40af;
+} 
