@@ -8,12 +8,9 @@ type TimerProps = {
   onTick: (newTimeLeft: number) => void;
 };
 
-export const Timer = ({ 
-  currentTime,
-  isRunning, 
-  onTimerComplete,
-  onTick 
-}: TimerProps) => {
+export const Timer = (props: TimerProps) => {
+  const { currentTime, isRunning, onTimerComplete, onTick } = props;
+
   useEffect(() => {
     let interval: number | undefined;
 
