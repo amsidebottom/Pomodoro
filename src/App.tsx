@@ -64,7 +64,6 @@ function App() {
         Current Mode: {mode === 'work' ? 'Work (25min)' : 'Rest (5min)'}
       </div>
       <Timer
-        initialTime={getCurrentTime()}
         currentTime={timeLeft}
         isRunning={isRunning}
         onTimerComplete={handleTimerComplete}

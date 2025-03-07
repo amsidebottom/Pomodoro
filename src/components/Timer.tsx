@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import styles from './Timer.module.css';
 
 type TimerProps = {
-  initialTime: number;
   currentTime: number;
   isRunning: boolean;
   onTimerComplete: () => void;
@@ -10,7 +9,6 @@ type TimerProps = {
 };
 
 export const Timer = ({ 
-  initialTime, 
   currentTime,
   isRunning, 
   onTimerComplete,
